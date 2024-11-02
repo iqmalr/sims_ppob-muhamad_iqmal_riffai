@@ -1,10 +1,12 @@
 import PaymentPage from "@/components/pages/payment-page";
 import services from "@/data/services";
 
+type Params = {
+  slug: string[];
+};
+
 type Props = {
-  params: {
-    slug: string[];
-  };
+  params: Params;
 };
 
 const Payment = async ({ params }: Props) => {
