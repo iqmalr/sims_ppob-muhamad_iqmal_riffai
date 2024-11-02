@@ -8,8 +8,8 @@ type Props = {
 };
 
 const Payment = async ({ params }: Props) => {
-  const { slug } = await params;
-  if (!slug?.length) {
+  const { slug } = params;
+  if (!slug || slug.length === 0) {
     return null;
   }
   const [serviceType] = slug;
