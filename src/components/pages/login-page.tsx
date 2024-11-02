@@ -51,9 +51,11 @@ const LoginPage = () => {
       } else {
         dispatch(setError(response.message));
       }
-    } catch (err: RootState) {
+    } catch (err: unknown) {
       console.error("Login error:", err);
-      dispatch(setError(err.data?.message || "Login gagal"));
+      if (err instanceof Error) {
+        dispatch(setError(err.message || "Login gagal"));
+      }
     }
   };
 

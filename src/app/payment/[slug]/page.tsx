@@ -1,25 +1,13 @@
 import PaymentPage from "@/components/pages/payment-page";
 import services from "@/data/services";
-import { Metadata } from "next";
 
 type Props = {
   params: {
     slug: string[];
   };
-  searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export const generateMetadata = async ({
-  params,
-}: {
-  params: { slug: string[] };
-}): Promise<Metadata> => {
-  return {
-    title: "Payment - SIMS PPOB",
-  };
-};
-
-export default function Payment({ params, searchParams }: Props) {
+export default async function Payment({ params }: Props) {
   const { slug } = params;
 
   if (!slug || slug.length === 0) {
