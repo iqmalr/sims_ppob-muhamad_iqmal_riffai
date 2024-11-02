@@ -2,9 +2,7 @@ import { transaction } from "@/data/transaction";
 import { useState } from "react";
 import TransactionCard from "../elements/transaction-card";
 
-type Props = {};
-
-const TransactionPage = (props: Props) => {
+const TransactionPage = () => {
   const [visibleItems, setVisibleItems] = useState(5);
 
   const showMore = () => {

@@ -1,8 +1,6 @@
 import TopUpPage from "@/components/pages/top-up-page";
 
-type Props = {};
-
-const TopUp = (props: Props) => {
+const TopUp = () => {
   return <TopUpPage />;
 };
 

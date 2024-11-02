@@ -1,8 +1,6 @@
 import LoginPage from "@/components/pages/login-page";
 
-type Props = {};
-
-const Login = (props: Props) => {
+const Login = () => {
   return <LoginPage />;
 };
 

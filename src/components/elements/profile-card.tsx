@@ -7,9 +7,8 @@ import { RootState } from "@/store/store";
 import Image from "next/image";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
-type Props = {};
 
-const ProfileCard = (props: Props) => {
+const ProfileCard = () => {
   const dispatch = useAppDispatch();
   const token = useSelector((state: RootState) => state.user.token);
   const user = useSelector((state: RootState) => state.user.user);

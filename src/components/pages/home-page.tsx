@@ -1,9 +1,7 @@
 "use client";
-import Link from "next/link"; // Import Link dari Next.js
+import Link from "next/link";
 
-type Props = {};
-
-const HomePage = (props: Props) => {
+const HomePage = () => {
   return (
     <div className="flex flex-col justify-center items-center h-screen bg-gray-50">
       <h1 className="text-4xl font-bold mb-4">Selamat Datang di SIMS PPOB</h1>

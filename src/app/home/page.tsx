@@ -1,8 +1,6 @@
 import HomePage from "@/components/pages/home-page";
 
-type Props = {};
-
-const Home = (props: Props) => {
+const Home = () => {
   return <HomePage />;
 };
 

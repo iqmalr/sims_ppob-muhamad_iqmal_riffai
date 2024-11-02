@@ -17,7 +17,7 @@ interface ApiResponse {
   message: string;
   data: {
     token?: string;
-    [key: string]: any;
+    key: string;
   };
 }
 

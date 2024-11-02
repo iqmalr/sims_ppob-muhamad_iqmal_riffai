@@ -2,9 +2,7 @@
 import Hero from "../elements/hero";
 import TopUpItems from "../elements/top-up-items";
 
-type Props = {};
-
-const TopUpPage = (props: Props) => {
+const TopUpPage = () => {
   return (
     <div>
       <Hero />

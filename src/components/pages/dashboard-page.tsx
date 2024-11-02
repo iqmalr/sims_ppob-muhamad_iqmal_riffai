@@ -3,9 +3,7 @@ import Hero from "../elements/hero";
 import Promos from "../elements/promos";
 import Services from "../elements/services";
 
-type Props = {};
-
-const DashboardPage = (props: Props) => {
+const DashboardPage = () => {
   return (
     <>
       <Hero />

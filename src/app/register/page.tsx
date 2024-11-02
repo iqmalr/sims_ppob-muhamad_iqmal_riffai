@@ -1,8 +1,6 @@
 import RegisterPage from "@/components/pages/register-page";
 
-type Props = {};
-
-const Register = (props: Props) => {
+const Register = () => {
   return <RegisterPage />;
 };
 

@@ -1,13 +1,16 @@
 "use client";
 
 import { setInputNominal } from "@/store/slices/top-up-slice";
+import { RootState } from "@/store/store";
 import { useDispatch, useSelector } from "react-redux";
 
 type Props = { serviceType?: string };
 
 const PaymentType = ({ serviceType }: Props) => {
   const dispatch = useDispatch();
-  const inputNominal = useSelector((state: any) => state.topUp.inputNominal);
+  const inputNominal = useSelector(
+    (state: RootState) => state.topUp.inputNominal
+  );
 
   const isInputEmpty = inputNominal.trim() === "";
   const handleBayarClick = () => {

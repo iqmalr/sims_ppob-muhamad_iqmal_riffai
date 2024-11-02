@@ -1,13 +1,14 @@
 "use client";
 
 import { setInputNominal } from "@/store/slices/top-up-slice";
+import { RootState } from "@/store/store";
 import { useDispatch, useSelector } from "react-redux";
 
-type Props = {};
-
-const TopUpItems = (props: Props) => {
+const TopUpItems = () => {
   const dispatch = useDispatch();
-  const inputNominal = useSelector((state: any) => state.topUp.inputNominal);
+  const inputNominal = useSelector(
+    (state: RootState) => state.topUp.inputNominal
+  );
 
   const handleNominalClick = (nominal: string) => {
     dispatch(setInputNominal(nominal));
@@ -58,7 +59,7 @@ const TopUpItems = (props: Props) => {
               >
                 {nominal}
               </button>
-            ),
+            )
           )}
         </div>
       </div>

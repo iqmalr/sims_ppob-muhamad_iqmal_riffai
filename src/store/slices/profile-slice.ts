@@ -27,11 +27,6 @@ interface LoginPayload {
   message: string;
 }
 
-interface AuthError {
-  status: number;
-  message: string;
-}
-
 export const fetchProfile = createAsyncThunk(
   "user/fetchProfile",
   async (token: string) => {

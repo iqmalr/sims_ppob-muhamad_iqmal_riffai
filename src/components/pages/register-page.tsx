@@ -1,13 +1,11 @@
 "use client";
 import { LockIcon, MailIcon, UserIcon } from "lucide-react";
-import Image from "next/image"; // Import Image dari Next.js
-import Link from "next/link"; // Import Link dari Next.js
+import Image from "next/image";
+import Link from "next/link";
 import IllustrasiLogin from "../../assets/Website Assets/Website Assets/Illustrasi-Login.png";
 import { Input } from "../ui/input";
 
-type Props = {};
-
-const RegisterPage = (props: Props) => {
+const RegisterPage = () => {
   return (
     <div className="flex flex-row h-screen">
       <div className="w-3/5 flex flex-col justify-center items-center p-8">

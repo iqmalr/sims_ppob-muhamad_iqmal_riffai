@@ -1,9 +1,7 @@
 import promos from "@/data/promos";
 import PromoCard from "./promo-card";
 
-type Props = {};
-
-const Promos = (props: Props) => {
+const Promos = () => {
   return (
     <div>
       <div>Temukan Promo Menarik</div>

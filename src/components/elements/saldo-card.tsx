@@ -4,9 +4,7 @@ import {
   toggleSaldoVisibility,
 } from "@/store/slices/saldo-slice";
 
-type Props = {};
-
-const SaldoCard = (props: Props) => {
+const SaldoCard = () => {
   const dispatch = useAppDispatch();
   const isVisible = useAppSelector(selectSaldoVisibility);
 

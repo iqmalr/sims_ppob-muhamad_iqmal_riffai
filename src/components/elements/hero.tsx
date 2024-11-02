@@ -1,9 +1,7 @@
 import ProfileCard from "./profile-card";
 import SaldoCard from "./saldo-card";
 
-type Props = {};
-
-const Hero = (props: Props) => {
+const Hero = () => {
   return (
     <div className="flex mb-10">
       <ProfileCard />
