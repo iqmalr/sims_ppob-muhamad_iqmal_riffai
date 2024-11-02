@@ -9,7 +9,7 @@ type ServiceCardProps = {
 const ServiceCard = ({ service }: ServiceCardProps) => {
   const router = useRouter();
   const handleClick = () => {
-    router.push(`/payment/${service.service_code.toLowerCase()}`);
+    router.push(`/payment/${service.service_name.toLowerCase()}`);
   };
   return (
     <div
@@ -22,7 +22,7 @@ const ServiceCard = ({ service }: ServiceCardProps) => {
         width={48}
         height={48}
       />
-      <p className="mt-2 text-sm">{service.service_name}</p>
+      <p className="mt-2 text-sm">{service.service_code}</p>
     </div>
   );
 };

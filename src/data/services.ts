@@ -18,28 +18,28 @@ export type Service = {
 };
 
 const services: Service[] = [
-  { service_code: "PBB", service_name: "PBB", service_icon: PBB },
-  { service_code: "LISTRIK", service_name: "Listrik", service_icon: Listrik },
-  { service_code: "PULSA", service_name: "Pulsa", service_icon: Pulsa },
-  { service_code: "PDAM", service_name: "PDAM", service_icon: PDAM },
-  { service_code: "PGN", service_name: "PGN", service_icon: PGN },
-  { service_code: "TV", service_name: "TV", service_icon: Televisi },
-  { service_code: "MUSIK", service_name: "Musik", service_icon: Musik },
+  { service_code: "PBB", service_name: "pbb", service_icon: PBB },
+  { service_code: "Listrik", service_name: "listrik", service_icon: Listrik },
+  { service_code: "Pulsa", service_name: "pulsa", service_icon: Pulsa },
+  { service_code: "PDAM", service_name: "pdam", service_icon: PDAM },
+  { service_code: "PGN", service_name: "pgn", service_icon: PGN },
+  { service_code: "TV", service_name: "tv", service_icon: Televisi },
+  { service_code: "Musik", service_name: "musik", service_icon: Musik },
   {
-    service_code: "VOUCHER GAME",
-    service_name: "Voucher Game",
+    service_code: "Voucher Game",
+    service_name: "voucher-game",
     service_icon: Game,
   },
   {
-    service_code: "VOUCHER MAKANAN",
-    service_name: "Voucher Makanan",
+    service_code: "Voucher Makanan",
+    service_name: "voucher-makanan",
     service_icon: VoucherMakanan,
   },
-  { service_code: "KURBAN", service_name: "Kurban", service_icon: Kurban },
-  { service_code: "ZAKAT", service_name: "Zakat", service_icon: Zakat },
+  { service_code: "Kurban", service_name: "kurban", service_icon: Kurban },
+  { service_code: "Zakat", service_name: "zakat", service_icon: Zakat },
   {
-    service_code: "PAKET DATA",
-    service_name: "Paket Data",
+    service_code: "Paket Data",
+    service_name: "paket-data",
     service_icon: PaketData,
   },
 ];

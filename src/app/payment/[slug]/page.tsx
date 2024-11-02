@@ -3,7 +3,7 @@ import services from "@/data/services";
 
 type Props = {
   params: {
-    slug: string[];
+    slug: string;
   };
 };
 
@@ -14,12 +14,13 @@ export default async function Payment({ params }: Props) {
     return null;
   }
 
-  const serviceType = slug[0].toUpperCase();
-  const service = services.find((s) => s.service_code === serviceType);
-
+  const serviceType = slug.toLowerCase();
+  const service = services.find(
+    (s) => s.service_name.toLowerCase() === serviceType
+  );
   if (!service) {
     return <p>Service not found</p>;
   }
 
-  return <PaymentPage serviceType={service.service_name} />;
+  return <PaymentPage serviceType={service.service_code} />;
 }
